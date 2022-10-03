@@ -1,0 +1,12 @@
+{
+  "fmt": {
+    "files": {
+      "exclude": [
+        "README.md"
+      ]
+    }
+  },
+  "tasks": {
+    "start": "deno run main.ts"
+  }
+}
