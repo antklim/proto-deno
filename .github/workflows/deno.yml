@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  CACHE_DIR: .actions-cache
+  DENO_DIR: .cache
 
 jobs:
   test:
@@ -28,7 +28,7 @@ jobs:
       - name: Cache Deno dependencies
         uses: actions/cache@v2
         with:
-          path: ${{ env.CACHE_DIR }}
+          path: ${{ env.DENO_DIR }}
           key: ${{ hashFiles('lock.json') }}
 
       - name: Verify formatting
