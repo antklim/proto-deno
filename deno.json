@@ -2,6 +2,11 @@
   "fmt": {
     "files": {
       "exclude": [
+        ".cache",
+        ".vscode",
+        ".gitignore",
+        "deno.json",
+        "lock.json",
         "README.md"
       ]
     }
