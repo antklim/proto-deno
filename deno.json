@@ -12,6 +12,13 @@
       ]
     }
   },
+  "lint": {
+    "files": {
+      "exclude": [
+        ".cache"
+      ]
+    }
+  },
   "tasks": {
     "cache": "deno cache --lock=lock.json --lock-write deps.ts",
     "cache-reload": "deno cache --reload --lock=lock.json deps.ts",
