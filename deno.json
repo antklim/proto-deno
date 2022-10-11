@@ -3,6 +3,7 @@
     "files": {
       "exclude": [
         ".cache",
+        ".github",
         ".vscode",
         ".gitignore",
         "deno.json",
@@ -15,6 +16,7 @@
     "cache": "deno cache --lock=lock.json --lock-write deps.ts",
     "cache-reload": "deno cache --reload --lock=lock.json deps.ts",
     "start": "deno run main.ts",
-    "start-cached-only": "deno run --lock=lock.json --cached-only main.ts"
+    "start-cached-only": "deno run --lock=lock.json --cached-only main.ts",
+    "test": "deno test -A --unstable"
   }
 }
