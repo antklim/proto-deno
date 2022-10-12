@@ -1,9 +1,9 @@
 {
   "deno.enable": true,
   "deno.unstable": true,
+  "deno.config": "deno.json",
+  "deno.cache": ".cache",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.defaultFormatter": "denoland.vscode-deno",
-  "deno.config": "deno.json",
-  "deno.cache": ".cache"
+  "editor.defaultFormatter": "denoland.vscode-deno"
 }
