@@ -1,23 +1,19 @@
 {
   "fmt": {
-    "files": {
-      "exclude": [
-        ".cache",
-        ".github",
-        ".vscode",
-        ".gitignore",
-        "deno.json",
-        "lock.json",
-        "README.md"
-      ]
-    }
+    "exclude": [
+      ".cache",
+      ".github",
+      ".vscode",
+      ".gitignore",
+      "deno.json",
+      "lock.json",
+      "README.md"
+    ]
   },
   "lint": {
-    "files": {
-      "exclude": [
-        ".cache"
-      ]
-    }
+    "exclude": [
+      ".cache"
+    ]
   },
   "tasks": {
     "cache": "deno cache --lock=lock.json --lock-write deps.ts",
