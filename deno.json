@@ -6,7 +6,6 @@
       ".vscode",
       ".gitignore",
       "deno.json",
-      "lock.json",
       "README.md"
     ]
   },
@@ -16,10 +15,10 @@
     ]
   },
   "tasks": {
-    "cache": "deno cache --lock-write deps.ts",
-    "cache-reload": "deno cache --reload deps.ts",
     "start": "deno run main.ts",
-    "start-cached-only": "deno run --cached-only main.ts",
     "test": "deno test -A"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1.0.8"
   }
 }
